@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Four Gods</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" id="viewport" content="width=750, user-scalable=no, minimal-ui, target-densitydpi=device-dpi">
+	<meta property="og:url" content="https://fourgodsglobal.com/">
+	<meta property="og:site_name" content="Four Gods">
+	<meta property="og:title" content="Four Gods ">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="images/img_facebook.jpg">
+	<meta property="og:image:type" content="image/jpeg">
+	<meta property="og:description" content="Four Gods">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/fullpage.js"></script>
+	<script type="text/javascript" src="js/ui.js"></script>
+	<script type="text/javascript" src="js/slick.js"></script>
+	<script type="text/javascript" src="js/clipboard.min.js"></script>
+	<style>
+		.jtzRjp {
+    display: grid;
+    gap: 2em;
+    grid-template-areas:
+        "title"
+        "image"
+        "action"
+        "social";
+}
+.kflzjo {
+    grid-area: title / title / title / title;
+}
+.iSoeA {
+    display: flex;
+    flex-direction: column;
+}
+.goQyhU {
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.glwedW {
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1.5em;
+}
+.CoLgZ {
+    font-size: clamp(2.5rem, 10vw, 3rem);
+}
+.cRWJtq {
+    font-family: JekoVariable, sans-serif;
+    font-weight: 400;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.ihvgJG {
+    font-size: 25px;
+}
+.kfkqfr {
+    grid-area: image / image / image / image;
+}
+.iSoeA {
+    display: flex;
+    flex-direction: column;
+}
+.bqtJKL {
+    height: 16px;
+    width: 16px;
+}
+.ciVmhf {
+    display: flex;
+    flex-direction: row;
+}
+.ciVmhf {
+    display: flex;
+    flex-direction: row;
+}
+.ciVmhf {
+    display: flex;
+    flex-direction: row;
+}
+.ciVmhf {
+    display: flex;
+    flex-direction: row;
+}
+.kSLLaF {
+    font-size: 20px;
+}
+.gPuNpW {
+    grid-area: action / action / action / action;
+}
+.iSoeA {
+    display: flex;
+    flex-direction: column;
+}
+.iSoeA {
+    display: flex;
+    flex-direction: column;
+}
+.ciVmhf {
+    display: flex;
+    flex-direction: row;
+}
+.ciVmhf {
+    display: flex;
+    flex-direction: row;
+}
+.cDNlyh {
+    font-size: 2.125rem;
+}
+.cRWJtq {
+    font-family: JekoVariable, sans-serif;
+    font-weight: 400;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.frSNAT {
+    height: 8px;
+    width: 8px;
+}
+.fNCkvD {
+    color: rgb(156 157 157);
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.cJssHP {
+    font-size: 2.5rem;
+}
+.cRWJtq {
+    font-family: JekoVariable, sans-serif;
+    font-weight: 400;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.bqJqbr {
+    height: 24px;
+    width: 24px;
+}
+.bqJqbr {
+    height: 24px;
+    width: 24px;
+}
+.bqtJKL {
+    height: 16px;
+    width: 16px;
+}
+.STZed {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.iyWWIA {
+    position: relative;
+}
+.iyWWIA:not(:last-child)::before {
+    content: ":";
+    position: absolute;
+    right: 30%;
+}
+.bqJqbr {
+    height: 24px;
+    width: 24px;
+}
+.iSoeA {
+    display: flex;
+    flex-direction: column;
+}
+.brbUZP {
+    height: 32px;
+    width: 32px;
+}
+.hjRAg button {
+    font-family: Inter;
+}
+.jZvXwL {
+    background: rgb(230, 230, 230);
+    border: none;
+    border-radius: 20px;
+    color: rgb(12, 23, 39);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 24px;
+    transition: all 0.2s ease 0s;
+}
+	</style>
+</head>
+
+<body>
+
+	<header class="header">
+		<a href="#btn" class="btn_trigger">닫기</a>
+		<div class="box">
+			<h1 class="logo" id="dotId"><a href="#sec1">Four Gods</a></h1>
+			<div class="menu_ui">
+				<nav>
+					<ul id="dotId">
+						<li data-menuanchor="sec1" class="m1"><a href="#sec1">Main</a></li>
+						<li data-menuanchor="sec2" class="m2"><a href="#sec2">Pre-register</a></li>
+						<li class="m3"><a href="#none" class="has_child">Game</a>
+							<ul>
+								<li data-menuanchor="sec3"><a href="#sec3" class="nft">NFT / FT</a></li>
+								<li data-menuanchor="sec3"><a href="#sec3" class="character">Character</a></li>
+								<li data-menuanchor="sec3"><a href="#sec3" class="media">Media</a></li>
+							</ul>
+						</li>
+						<li data-menuanchor="sec4" class="m4"><a href="#sec4">Token</a></li>
+						<li class="m5"><a href="#none" class="has_child">Event</a>
+							<ul>
+								<li data-menuanchor="sec5"><a href="#sec5" class="event1">Community</a></li>
+								<li data-menuanchor="sec5"><a href="#sec5" class="event2">AIRDROP</a></li>
+								<li data-menuanchor="sec5"><a href="#sec5" class="event3">NFT Pre-Sale</a></li>
+							</ul>
+						</li>
+						<li data-menuanchor="sec6" class="m6"><a href="#sec6">News</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="sns_ui">
+				<ul>
+					<li class="home"><a href="/front/policy/policy" class="btn_policy">policy</a></li>
+					<li class="home"><a href="/" class="btn_brand">home</a></li>
+					<li><a href="https://www.facebook.com/FourGodsOnWEMIX/" class="btn_cafe"
+							target="_blank">facebook</a></li>
+					<li><a href="https://twitter.com/FourGodsOnWEMIX" class="btn_telegram" target="_blank">twritter</a>
+					</li>
+					<li><a href="https://discord.gg/gqtqqDFbxW" class="btn_discord" target="_blank">discord</a></li>
+					<!-- <li id="dotId"><a href="#sec4" class="btn_coin">coin</a></li> -->
+				</ul>
+			</div>
+			<a href="/front/lux/" class="f_banner">lux</a>
+		</div>
+	</header>
+
+	<div class="top_had open_had">
+		<p class="logo" id="dotId"><a href="#sec1">Four Gods</a></p>
+	</div>
+
+	<div id="myContainer">
+
+		<section class="section main">
+			<div class="cons">
+				<div class="box">
+					<div class="txt"></div>
+					<div class="btn_register" id="dotId">
+						<a href="#sec2">pre-register</a>
+					</div>
+				</div>
+			</div>
+		</section><!-- //main -->
+
+		<section class="section register">
+			<div class="cons">
+				<div class="box">
+					<!-- <div class="in">
+					<div class="gift">gift</div>
+					<div class="btn_storeBook">
+						<ul>
+							<li class="btn_google"><a href="https://play.google.com/store/apps/details?id=com.stormgames.fourgodsonwemix" target="_blank">google play</a></li>
+							<li class="btn_apps"><a href="https://apps.apple.com/app/id1604721687" target="_blank">app store</a></li>
+						</ul>
+					</div>
+					<div class="cha1"></div><div class="cha2"></div>
+				</div> -->
+					<div class="top_had open_had">
+						<p class="logo" id="dotId"><a href="/front/apply/mobile#sec1">Four Gods</a></p>
+					</div>
+
+					<div class="sub_pg">
+						<div class="contents">
+
+
+
+							<!-- view  -->
+
+							<div class=" board_view">
+								<h1>Registration and purchases are open!</h1>
+								<div class="sect_tit event">event</div>
+
+
+								<div class="memo fr-view">
+									<p><strong><span style="color: rgb(209, 72, 65);">﻿Oriental Fantasy
+												MMORPG</span></strong></p>
+									<p>Greeting, Guardians This is Four Gods.</p>
+									<p><br></p>
+									<p>Finally, IDO Gods has started on April 21, 2022 AT 5:00 AM UTC</p>
+									<p>Please refer to the information below to participate in the IDO Four Gods Purchase</p>
+									<p><br></p>
+									<div>
+										<div>
+											<div>
+												<hr>
+											</div>
+										</div>
+									</div>
+									<div>
+										<div>
+											<div>
+												<div><img src="images/img_202204_624b965a315ac.jpg"
+														style="width: 700px;" class="fr-fic fr-dib fr-fil" data-code
+														data-id data-err_cnt="0" data-msgs data-return_url
+														data-data="[object Object]" data-data_cnt="1" data-dbs
+														data-status="success"></div>
+											</div>
+										</div>
+									</div>
+									<div>
+										<div>
+											<p><span style="color: rgb(44, 130, 201);"><strong>◈ Pre-Registration
+														Schedule</strong></span></p>
+											<p>- 04/05 02:00 (UTC+0) - Until further announcement</p>
+											<p><br></p>
+											<p><span style="color: rgb(44, 130, 201);"><strong>◈ How to participate in
+														Pre-Registration</strong></span></p>
+											<p>1. Go to Four Gods&#39; official brand page or select a Store that fits
+												on your device at
+												the bottom.</p>
+											<p><br></p>
+											<p>☞ Pre-Registration Page <a
+													href="https://fourgodsglobal.com/front/apply/pc#sec2">[Go
+													to]</a></p>
+										</div>
+									</div>
+									<div>
+										<div>
+											<div>
+												<div>
+													<div><a
+															href="https://play.google.com/store/apps/details?id=com.stormgames.fourgodsonwemix"><img
+																src="images/img_202204_624b9777a0ddb.png"
+																style="width: 265px;" class="fr-fic fr-dib fr-fil"
+																data-code data-id data-err_cnt="0" data-msgs
+																data-return_url data-data="[object Object]"
+																data-data_cnt="1" data-dbs data-status="success"></a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div>
+										<div>
+											<div><a href="https://apps.apple.com/app/id1604721687"><img
+														src="images/img_202204_624b977d4e38d.png" style="width: 264px;"
+														class="fr-fic fr-dib fr-fil" data-code data-id data-err_cnt="0"
+														data-msgs data-return_url data-data="[object Object]"
+														data-data_cnt="1" data-dbs data-status="success"></a></div>
+										</div>
+									</div>
+									<div>
+										<div>
+											<p>2. Click the Pre-register button from the Store!</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>>
+
+		<section class="section news">
+			<div class="cons">
+				<div class="box">
+					<div class="in">
+						<div class="sc-jIkYaL jtzRjp" style="padding: 20px 35px;">
+							<div class="sc-ZOsLE kflzjo">
+								<div class="sc-iqsfdx iSoeA">
+									<div class="sc-ezbkgU goQyhU" style="justify-content: space-between;">
+										<div wrap="wrap" class="sc-ezbkgU glwedW">
+											<h1 class="sc-dJjZJu cRWJtq sc-hGPAah CoLgZ" style="align-self: start;">Four Gods -FCFS sale (Fixed)</h1>
+										</div>
+									</div>
+									<p class="sc-cidCJl sc-jcFkyM fNCkvD ihvgJG" style="width: 100%; line-height: 1.5;">
+										Four Gods Blockchain Oriental Fantasy MMORPG,
+										Battle
+										The sophisticated and thrilling Four Gods.
+										A world that finds and creates memories, both good and evil!
+										Get victory in endless Guild Wars and rule the world.</p>
+								</div>
+							</div>
+							<div class="sc-ZOsLE kfkqfr">
+								<div class="sc-iqsfdx iSoeA"><img src="images/img_202204_624b965a315ac.jpg"
+										alt="Savage - Public sale" title="Savage - Public sale"
+										style="height: auto; width: 100%; background-position: center center; background-size: cover; border-radius: 24px;">
+									<div size="16" class="sc-kLwgWK bqtJKL"></div>
+									<div class="sc-ezbkgU ciVmhf" style="gap: 1rem;">
+										<div class="sc-ezbkgU ciVmhf"
+											style="padding: 0.2rem 0.4rem; background-color: white; justify-content: center; align-items: center;">
+											<p class="sc-cidCJl sc-iUKrWq fNCkvD kSLLaF">nft</p>
+										</div>
+										<div class="sc-ezbkgU ciVmhf"
+											style="padding: 0.2rem 0.4rem; background-color: white; justify-content: center; align-items: center;">
+											<p class="sc-cidCJl sc-iUKrWq fNCkvD kSLLaF">video</p>
+										</div>
+										<div class="sc-ezbkgU ciVmhf"
+											style="padding: 0.2rem 0.4rem; background-color: white; justify-content: center; align-items: center;">
+											<p class="sc-cidCJl sc-iUKrWq fNCkvD kSLLaF">creators-economy</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="sc-ZOsLE gPuNpW">
+								<div class="sc-iqsfdx iSoeA">
+									<div class="sc-iqsfdx iSoeA">
+										<div class="sc-ezbkgU ciVmhf"
+											style="justify-content: space-between; align-items: flex-end;">
+											<div class="sc-ezbkgU ciVmhf" style="align-items: center;">
+												<h2 class="sc-dJjZJu cRWJtq sc-dlVyqM cDNlyh" style="font-size: 34px;">$110,520 </h2>
+												<div size="8" class="sc-kLwgWK frSNAT"></div>
+												<p class="sc-cidCJl sc-iUKrWq fNCkvD kSLLaF">invested</p>
+											</div>
+											<h3 class="sc-dJjZJu cRWJtq sc-kfPtPH cJssHP" style="align-items: center;">79%
+											</h3>
+										</div>
+										<div
+											style="border-radius: 6px; height: 8px; width: 100%; background-image: linear-gradient(90deg, rgb(161, 168, 178) 0px, rgb(161, 168, 178) 99%);">
+											<div
+												style="border-radius: 6px; height: 100%; margin-left: auto; background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 78.943%, rgb(226, 226, 226) 88.943%);">
+											</div>
+										</div>
+										<div size="8" class="sc-kLwgWK frSNAT"></div>
+										<p class="sc-cidCJl sc-iUKrWq fNCkvD kSLLaF">Funding cap: $83.900 </p>
+									</div>
+									<h3 class="sc-dJjZJu cRWJtq sc-kfPtPH cJssHP">
+										<div class="sc-crHlIS STZed">
+											<div class="sc-egiSv iyWWIA">
+												<h3 class="sc-dJjZJu cRWJtq sc-kfPtPH cJssHP" id="days">0</h3>
+												<p class="sc-cidCJl sc-iUKrWq fNCkvD kSLLaF">days</p>
+											</div>
+											<div class="sc-egiSv iyWWIA">
+												<h3 class="sc-dJjZJu cRWJtq sc-kfPtPH cJssHP" id="hours">0</h3>
+												<p class="sc-cidCJl sc-iUKrWq fNCkvD kSLLaF">hours</p>
+											</div>
+											<div class="sc-egiSv iyWWIA">
+												<h3 class="sc-dJjZJu cRWJtq sc-kfPtPH cJssHP" id="minutes">0</h3>
+												<p class="sc-cidCJl sc-iUKrWq fNCkvD kSLLaF">minutes</p>
+											</div>
+											<div class="sc-egiSv iyWWIA">
+												<h3 class="sc-dJjZJu cRWJtq sc-kfPtPH cJssHP" id="seconds">0</h3>
+												<p class="sc-cidCJl sc-iUKrWq fNCkvD kSLLaF">seconds</p>
+											</div>
+										</div>
+									</h3>
+									<div size="24" class="sc-kLwgWK bqJqbr"></div>
+									<div class="sc-iqsfdx iSoeA">
+										<h3 class="sc-dJjZJu cRWJtq sc-kfPtPH cJssHP">$0.0125 USDT</h3>
+										<p class="sc-cidCJl sc-iUKrWq fNCkvD kSLLaF">Price of FOG token</p>
+									</div>
+									<div size="32" class="sc-kLwgWK brbUZP"></div> <button class="sc-AjmZR jZvXwL">BUY FOG</button>
+									<div size="8" class="sc-kLwgWK frSNAT"></div>
+									<div class="sc-iqsfdx iSoeA" style="width: 100%; align-items: center;">
+										<p class="sc-cidCJl sc-caiKgP fNCkvD ipNIuR" style="margin-top: 0.1rem;"></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- <div class="board">
+							<h2>Notice</h2>
+							<a href="/front/community/mo-p01" class="more">more</a>
+							<ul>
+																<li><a href="/front/community/mo-p01?idx=76">Pre-Registration Events&#039; at a Glance</a><span>2022-04-05</span></li>
+																<li><a href="/front/community/mo-p01?idx=73">Pre-Registration is Ongoing!</a><span>2022-04-05</span></li>
+																<li><a href="/front/community/mo-p01?idx=65">Official Teaser Site OPEN</a><span>2022-03-25</span></li>
+														</ul>
+						</div>
+						<div class="board">
+							<h2>Event</h2>
+							<a href="/front/community/mo-p02" class="more">more</a>
+							<ul>
+																<li><a href="/front/community/mo-p02?idx=75">Join &amp; Follow official communities! Event</a><span>2022-04-05</span></li>
+																<li><a href="/front/community/mo-p02?idx=74">Pre-Registration AIR DROP Event</a><span>2022-04-05</span></li>
+														</ul>
+						</div>
+						<div class="board">
+							<h2>Guide</h2>
+							<a href="/front/community/mo-p03" class="more">more</a>
+							<ul>
+														</ul>
+						</div>
+						<div class="board">
+							<h2>FAQ</h2>
+							<a href="/front/community/mo-p04" class="more">more</a>
+							<ul>
+														</ul>
+						</div> -->
+					</div>
+				</div>
+
+				<footer>
+					<p>STORMGAMES Co., Ltd. All rights reserved.
+						<span>
+							<a href="/front/policy/terms">[Terms of Service]</a>, <a
+								href="/front/policy/privacy">[Privacy Policy]</a>
+							<!--, <a href="/front/policy/game">[Game Operation Privacy]</a> --></span>
+					</p>
+					<a href="/front/lux/" class="f_banner">lux</a>
+				</footer>
+			</div>
+		</section>
+	</div><!-- //myContainer -->
+
+
+	<div class="charter_views">
+		<button class="close" type="button">닫기</button>
+		<div class="cons">
+			<div class="box">
+				<div class="slider-nav">
+					<div class="item nav1">Azure Dragon 청룡</div>
+					<div class="item nav2">Black Tortoise 현무</div>
+					<div class="item nav3">Vermilion Bird 주작</div>
+					<div class="item nav4">White Tiger 백호</div>
+				</div>
+				<div class="slider-for" id="characterSlider">
+					<div class="item dec1">
+						<div class="in">
+							<div class="img">Azure Dragon 청룡</div>
+							<div class="cha">Azure Dragon 청룡</div>
+						</div>
+					</div>
+					<div class="item dec2">
+						<div class="in">
+							<div class="img">Black Tortoise 현무</div>
+							<div class="cha">Black Tortoise 현무</div>
+						</div>
+					</div>
+					<div class="item dec3">
+						<div class="in">
+							<div class="img">Vermilion Bird 주작</div>
+							<div class="cha">Vermilion Bird 주작</div>
+						</div>
+					</div>
+					<div class="item dec4">
+						<div class="in">
+							<div class="img">White Tiger 백호</div>
+							<div class="cha">White Tiger 백호</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- //charter_views -->
+
+	<!-- 영상 -->
+	<div class="popEmved_ui" id="popEmved">
+		<div class="pop_emved">
+			<div id="isframe"></div>
+			<a href="#popEmved" class="btn_videoClose">닫기</a>
+		</div>
+		<div class="dimmed"></div>
+	</div>
+
+	<script type="text/javascript">
+		<!--
+		mobileJs();
+
+		var sectab = '1';
+		$(window).bind("load", function () {
+			$('body').addClass('open');
+			setTimeout(function () {
+				$('.tabs li:nth-child(' + sectab + ') a').click();
+			}, 200);
+		});
+
+		var clipboard = new Clipboard('.btn_copy');
+		clipboard.on('success', function (e) {
+			alert('Success');
+		});
+		//
+		-->
+	</script>
+	<script type="text/javascript" src="js/video.js"></script>
+	<div id="modal-form"></div>
+	<script>
+		(function () {
+			var countDownDate = new Date("Apr 25, 2022 23:19:59").getTime();
+    
+			// Update the count down every 1 second
+			var x = setInterval(function() {
+		
+			// Get today's date and time
+			var now = new Date().getTime();
+			
+			// Find the distance between now and the count down date
+			var distance = countDownDate - now;
+			
+			// Time calculations for days, hours, minutes and seconds
+			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+			
+			// Output the result in an element with id="demo"
+			document.getElementById("days").innerHTML = days.toString().length === 1? '0' + days.toString() : days;
+			document.getElementById("hours").innerHTML = hours.toString().length === 1? '0' + hours.toString() : hours ;
+			document.getElementById("minutes").innerHTML = minutes.toString().length === 1? '0' + minutes.toString() : minutes ;
+			document.getElementById("seconds").innerHTML = seconds.toString().length === 1? '0' + seconds.toString() : seconds ;
+			
+			// If the count down is over, write some text 
+			if (distance < 0) {
+			clearInterval(x);
+				document.getElementById("days").innerHTML = '--';
+				document.getElementById("hours").innerHTML = '--';
+				document.getElementById("minutes").innerHTML = '--';
+				document.getElementById("seconds").innerHTML = '--';
+			}
+			}, 1000);
+        }());
+	</script>
+
+
+</body>
+
+</html>
