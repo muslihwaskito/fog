@@ -1,12 +1,12 @@
 function resetGame(){
 	$('.section.game').addClass("nft");
 	$('.section.game').removeClass("charter").removeClass("media");
-	$('.tabs li:nth-child(1) a').click();
+	$('.tabs li:nth-child(2) a').click();
 }
 function resetEvent(){
 	$('.section.event').addClass("event1");
 	$('.section.event').removeClass("event2").removeClass("event3");
-	$('.tabs li:nth-child(1) a').click();
+	$('.tabs li:nth-child(2) a').click();
 }
 function resetMenu(num){
 	$('.menu_ui li').removeClass("active");
@@ -200,14 +200,14 @@ function mobileJs(){
 		setTimeout(function() {
 		  $('.section.game').addClass("nft");
 		  $('.section.game').removeClass("charter").removeClass("media");
-		  $('.game .tabs li:nth-child(1) a').click();
+		  $('.game .tabs li:nth-child(2) a').click();
 		}, 1000);
 	}
 	function resetEvent(){
 		setTimeout(function() {
 		  $('.section.event').addClass("event1");
 		  $('.section.event').removeClass("event2").removeClass("event3");
-		  $('.event .tabs li:nth-child(1) a').click();
+		  $('.event .tabs li:nth-child(2) a').click();
 		}, 1000);
 	}
 	function resetMenu(num){
