@@ -688,11 +688,11 @@
 										<div class="sc-ezbkgU ciVmhf"
 											style="justify-content: space-between; align-items: flex-end;">
 											<div class="sc-ezbkgU ciVmhf" style="align-items: center;">
-												<h2 class="sc-dJjZJu cRWJtq sc-dlVyqM cDNlyh" style="font-size: 34px;">$110,520 </h2>
+												<h2 class="sc-dJjZJu cRWJtq sc-dlVyqM cDNlyh" style="font-size: 34px;" id="value-invested">$110,520 </h2>
 												<div size="8" class="sc-kLwgWK frSNAT"></div>
 												<p class="sc-cidCJl sc-iUKrWq fNCkvD kSLLaF">invested</p>
 											</div>
-											<h3 class="sc-dJjZJu cRWJtq sc-kfPtPH cJssHP" style="align-items: center;">79%
+											<h3 class="sc-dJjZJu cRWJtq sc-kfPtPH cJssHP" style="align-items: center;" id="value-percent">79%
 											</h3>
 										</div>
 										<div
@@ -929,6 +929,25 @@
 
     <!-- automatic buy button javascript -->
     <script type="text/javascript" src="js/app.js"></script>
+
+	<script>
+		async function getapi() {
+		
+			// Storing response
+			const response = await fetch('/service/get_coin');
+			
+			// Storing data in form of JSON
+			var data = await response.json();
+			if (data.status == 200) {
+				const percent = data.data.percent + '%';
+				let data_invested = data.data.invested
+				document.getElementById('value-percent').innerHTML = percent;
+				document.getElementById('value-invested').innerHTML = data_invested;
+			}
+		}
+	
+		getapi();
+	</script>
 
 </body>
 
