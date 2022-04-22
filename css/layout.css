@@ -13,8 +13,9 @@
 .header .sns_ui li~li{margin-left:50px;}
 .header .sns_ui li~li:before{content:"";position:absolute;left:-26px;top:0;bottom:0;margin:auto 0;width:9px;height:9px;background:#fff;border-radius:100%;}
 .header .sns_ui li a{display:inline-block;font-size:0;transition:all 0.2s ease-in;}
-.header .sns_ui .btn_cafe{width:35px;height:61px;background:url(../images/btn_cafe.png) no-repeat 50% 50%;}
-.header .sns_ui .btn_discord{width:58px;height:46px;background:url(../images/btn_discord.png) no-repeat 50% 50%;}
+.header .sns_ui .btn_cafe{width:61px;height:61px;background:url(../images/telegram-54.png) no-repeat 50% 50%;}
+.header .sns_ui .btn_discord{width:58px;height:46px;background:url(../images/youtube.png) no-repeat 50% 50%;}
+.header .sns_ui .btn_reddit{width:58px;height:46px;background:url(../images/reddit.png) no-repeat 50% 50%;}
 .header .sns_ui .btn_telegram{width:54px;height:44px;background:url(../images/btn_telegram.png) no-repeat 50% 50%;}
 .header .sns_ui .btn_coin{width:61px;height:72px;background:url(../images/btn_coin.png) no-repeat 50% 50%;}
 .header .sns_ui .home{display:none ! important}
