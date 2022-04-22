@@ -352,7 +352,7 @@ function mobileJs(){
 	});
 
 	$('.charter_views .close').click(function(){
-		 $.fn.fullpage.setAllowScrolling(true);
+		//  $.fn.fullpage.setAllowScrolling(true);
 		setTimeout(function() {
 			$('.charter_views').hide();
 		}, 50);
